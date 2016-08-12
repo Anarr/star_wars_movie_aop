@@ -1,0 +1,4 @@
+bootstrap grid, clearfix , sizes
+css position,margin,selectors before after,css3 news,display, clear,float,! important 
+minimize grunt
+add font url font short writing, 

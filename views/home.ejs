@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title><%= title %></title>
+    <% include partials/head.ejs %>
+</head>
+<body>
+<% include partials/header.ejs %>
+	<div id="hero-image">
+		<div id="hero-title"><%= title %></div>
+	</div>
+
+	<div id="posters-wrapper" class="content-padding clearfix">
+		<% for(var i = 0; i<movies.length;i++) {%>
+		<div class="poster">
+			<img src="/images/<%= movies[i].poster %>" class="img-responsive">
+			<div class="poster-info-overlay">
+				<h3><%= movies[i].title%></h3>
+				<h4>View more <i class="fa fa-arrow-right"></i></h4>
+			</div>
+		</div>
+		<% } %>
+	</div>
+
+
+  <% include partials/head.ejs %>
+</body>
+</html>
